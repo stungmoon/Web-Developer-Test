@@ -2,9 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>💡 My App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="#">
+  <script src="https://kit.fontawesome.com/3c20b85102.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/src/styles/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200;400&display=swap" rel="stylesheet">   
+  <title>Lagom</title>
 </head>
 <body>
-  <h1>Welcome to my Application</h1>
+  <header>
+    <img class="logo" src="/design-assets/APPS.svg"></img>
+    <nav>
+      <p class="menu-title">Menu</p>
+      <span class="menu-icon">
+        <i class="fas fa-bars"></i>
+      </span>
+      <ul class="menu">
+        <li>Products</li>
+        <li>News</li>
+        <li>Contact</li>
+        <li>Img</li>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero">
+    <p>APPS unveils new studio</p>
+    <h2>Lagom</h2>    
+  </section>
+  <section class="products">
+    <h3>Innovation and experience design agency.</h3>
+    <p>Apps is an innovation and experience design agency. We exist to create a better future for you.</p>
+    <a class="button-link" href="#">Products</a>
+  </section>
+  <section class="news">
+    <section class="news-text">
+      <h3>The imaginative application of art and science.</h3>
+      <p>We architect, design and deliver iconic experiences, services and products that improve people's lives.</p>
+      <a class="button-link" href="#">Read Latest</a>
+    </section>
+    <img src="/design-assets/mountain.jpg" class="news-image"></img>
+  </section>
+  <footer>
+    <h1>APPS</h1>
+    <ul class="footer-menu">
+      <li>Products</li>
+      <li>News</li>
+      <li>Contact</li>
+      <li>Your Cart</li>
+    </ul>
+    <ul class="social-icons">
+      <li><i class="fa fa-google-plus"></i></li>
+      <li><i class="fa fa-facebook-f"></i></li>
+      <li><i class="fa fa-instagram"></i></li>
+      <li><i class="fa fa-twitter"></i></li>
+    </ul>
+    <a><p>Privacy Policy</p></a>
+    <p>© 2017 Google. All rights reserved</p>
+  </footer>
 </body>
+<script type="module" src="../scripts/app.js"></script>
 </html>

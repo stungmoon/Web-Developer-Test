@@ -1,0 +1,174 @@
+body {
+    background: #FFF;
+    color: #363636;
+    margin: 0 auto;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 200;
+}
+
+/* Typography */
+
+.hero {
+    color: #FFF;
+}
+
+.menu-title {
+    margin-right: 1em;
+}
+
+.menu-icon {
+    font-size: 2rem;
+}
+
+p {
+    margin: 0;
+}
+
+/* Layout */
+
+header {
+    padding: 1em 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 3px 15px rgba(30, 30, 30, 0.3);
+    -moz-box-shadow: 0px 3px 15px rgba(30, 30, 30, 0.3);
+    -webkit-box-shadow: 0px 3px 15px rgba(30, 30, 30, 0.3);
+    position: relative;
+    z-index: 1;
+}
+
+header ul {
+    display: none;
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero {
+    background-image: url(/design-assets/hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+}
+
+.products {
+    height: 50vh;
+    text-align: center;
+}
+
+.news {
+}
+
+.news-text {
+    text-align: left;
+}
+
+.products p,
+.news-text p {
+    margin-bottom: 3em;
+}
+
+.news-image {
+    background-image: url(/design-assets/mountain.jpg);
+    background-color: black;
+    height: auto;
+    width: 100%;
+}
+
+footer {
+    margin: 0 2em;
+}
+
+.footer-menu {
+    list-style: none;
+    padding-left: 0;
+}
+
+.social-icons {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+.social-icons li {
+    padding-right: 1em;
+    color: #363636;
+}
+
+/* Hamburger icon */
+
+/* .menu-icon {
+    display: flex;
+    width: 40px;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.menu-icon span {
+    background-color: black;
+    width: 35px;
+    height: 5px;
+    margin-top: 6px;
+    color: black;
+}
+.menu-icon span::before {
+    content: "";
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    display:block;
+    margin: 10px 0;
+    color: black;
+
+}
+.menu-icon span::after {
+    color: black;
+    content: "";
+    width: 35px;
+    height: 5px;
+    background-color: black;  
+    display:block;
+    margin: -5px 0;
+} */
+
+.button-link {
+    background-color: #448AFF;
+    color: #EBEBEB;
+    border: none;
+    border-radius: 3px;
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+
+@media(min-width: 800px) {
+    header ul {
+        display: flex;
+    }
+
+    .news {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .news-content {
+        /* order: 0; */
+    }
+
+    .news-image {
+        order: -1;
+    }
+}
